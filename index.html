@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="theme.css" />
   </head>
   <body>
     <canvas id="magic-field" aria-hidden="true"></canvas>
     <div class="grain" aria-hidden="true"></div>
     <header class="nav shell">
       <a class="brand" href="#top">SAIMON<span>_</span></a>
-      <nav aria-label="Primary navigation"><a href="#swiftride">SwiftRide</a><a href="#archive">Archive</a><a href="#about">About</a></nav>
+      <nav aria-label="Primary navigation"><a href="swiftride.html">SwiftRide</a><a href="#intelligence">AI / ML</a><a href="#archive">Archive</a><a href="#about">About</a></nav>
       <a class="nav-cta" href="mailto:hello@saimon.dev">Enter the domain ↗</a>
     </header>
 
@@ -64,6 +65,15 @@
         <div class="flow-board reveal"><div><p class="eyebrow">THE FULL PRODUCT FLOW</p><h3>One shared ride. Three focused journeys.</h3></div><ol><li><b>Rider</b><span>Search → choose → verify pickup → track → arrive → support</span></li><li><b>Driver</b><span>Go online → accept → navigate → OTP → complete → earnings</span></li><li><b>Ops</b><span>Monitor supply → resolve exceptions → assign → protect service</span></li></ol></div>
       </section>
 
+      <section id="intelligence" class="intelligence shell">
+        <div class="section-intro reveal"><div><p class="eyebrow">03 / INTELLIGENT SYSTEMS</p><h2>AI, ML &amp;<br /><em>visual intelligence.</em></h2></div><p>I use AI when it gives a person a clearer, faster or more reliable decision—not as decoration.</p></div>
+        <div class="intelligence-grid">
+          <article class="reveal"><span>01</span><div class="neural-lines" aria-hidden="true"></div><h3>Applied AI</h3><p>Assistive product features, structured automation and decision support that fit real operating workflows.</p></article>
+          <article class="reveal"><span>02</span><div class="vision-frame" aria-hidden="true"><i></i><b>98.4%</b></div><h3>Computer vision</h3><p>Camera-led inspection, detection and quality signals that turn visual input into action.</p></article>
+          <article class="reveal"><span>03</span><div class="data-stream" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>ML systems</h3><p>Useful prediction and classification layers connected to an understandable product experience.</p></article>
+        </div>
+      </section>
+
       <section id="archive" class="archive shell">
         <div class="section-intro reveal"><div><p class="eyebrow">03 / THE PROJECT ARCHIVE</p><h2>Twenty systems.<br /><em>One direction.</em></h2></div><p>The repository is prepared with one folder per future product — each ready for its own source, experiments and deployment history.</p></div>
         <div class="archive-grid reveal"><span>01 / SwiftRide</span><span>02 / TableFlow</span><span>03 / SiteSight</span><span>04 / QueueLess</span><span>05 / StockLens</span><span>06 / FixFleet</span><span>07 / InvoicePilot</span><span>08 / RentReady</span><span>09 / ClassLoop</span><span>10 / EventPulse</span><span>11 / CareTrack</span><span>12 / MenuMint</span><span>13 / ShiftSync</span><span>14 / ClaimSnap</span><span>15 / VendorVault</span><span>16 / LeadBoard</span><span>17 / GymPulse</span><span>18 / TutorMatch</span><span>19 / ParcelProof</span><span>20 / VisionInspect</span></div>
@@ -73,5 +83,6 @@
     </main>
     <footer class="shell"><a class="brand" href="#top">SAIMON<span>_</span></a><p>© 2026 Saimon Kabir Chowdhury</p><a href="mailto:hello@saimon.dev">hello@saimon.dev ↗</a></footer>
     <script src="script.js"></script>
+    <script>document.querySelector('.hero-actions .primary').href = 'swiftride.html';</script>
   </body>
 </html>

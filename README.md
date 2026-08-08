@@ -6,9 +6,11 @@
 
 A cinematic personal portfolio for **Saimon Kabir Chowdhury** — a product-minded builder working across mobile experiences, AI, computer vision and operational software.
 
-The page uses a custom hero illustration, dimensional CSS interfaces, motion, pointer-driven depth and a lightweight particle field. It needs no framework or build step: open [index.html](index.html) in a browser.
+The page uses a deep-navy visual system, custom hero illustration, dimensional CSS interfaces, motion, pointer-driven depth and a lightweight particle field. It needs no framework or build step: open [index.html](index.html) in a browser.
 
 ## Featured case study: SwiftRide
+
+The portfolio links to a standalone [SwiftRide case study](swiftride.html). It includes rider, driver and operations UI/UX, flow rationale and design-system decisions.
 
 SwiftRide is a map-first ride-sharing ecosystem designed for three roles sharing one live marketplace.
 
@@ -64,7 +66,9 @@ flowchart LR
 ├── assets/            # Hero art and future portfolio assets
 ├── projects/          # 20 code-ready product spaces
 ├── index.html         # Portfolio experience and case study
+├── swiftride.html     # Dedicated SwiftRide product case study
 ├── styles.css         # 3D visual system and responsive screens
+├── theme.css          # Deep-navy theme, AI/ML and case-study layout
 ├── script.js          # Motion, reveals, depth and particle field
 └── README.md
 ```
