@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="portfolio.css" />
   </head>
   <body>
     <canvas id="magic-field" aria-hidden="true"></canvas>
     <div class="grain" aria-hidden="true"></div>
     <header class="nav shell">
       <a class="brand" href="#top">SAIMON<span>_</span></a>
-      <nav aria-label="Primary navigation"><a href="swiftride.html">SwiftRide</a><a href="#intelligence">AI / ML</a><a href="#archive">Archive</a><a href="#about">About</a></nav>
+      <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#intelligence">AI / ML</a><a href="#archive">Archive</a><a href="#about">About</a></nav>
       <a class="nav-cta" href="mailto:hello@saimon.dev">Enter the domain ↗</a>
     </header>
 
@@ -41,6 +42,15 @@
         <p class="eyebrow">01 / BUILDER’S MANIFESTO</p>
         <h2>I do not collect ideas.<br />I <em>give them gravity.</em></h2>
         <p class="manifesto-copy">The work lives where product judgment meets technical craft: the screen a rider trusts, the dashboard an operator depends on, the model that turns a camera into a decision.</p>
+      </section>
+
+      <section id="work" class="portfolio-work shell">
+        <div class="section-intro reveal"><div><p class="eyebrow">02 / SELECTED BUILDS</p><h2>Systems for<br /><em>what’s next.</em></h2></div><p>One portfolio, multiple directions: mobility, AI, visual intelligence and operations software.</p></div>
+        <div class="build-grid">
+          <a class="build-card featured reveal" href="swiftride.html" data-tilt><div><p class="eyebrow">01 / MOBILITY CASE STUDY</p><h3>SwiftRide<span>↗</span></h3><p>A full ride-sharing ecosystem for riders, drivers and live operations.</p><div class="tags"><span>Mobile UX</span><span>Maps</span><span>Realtime</span></div></div><div class="build-phone"><div class="fake-map darkmap"><span class="road r1"></span><span class="road r2"></span><i class="pin p-lime"></i><i class="car-dot"></i></div><div class="mini-sheet"><b>Driver 2 min away</b><small>Track live ride</small></div></div></a>
+          <article class="build-card vision reveal" data-tilt><p class="eyebrow">02 / COMPUTER VISION</p><div class="vision-orb"><i></i><b>OBJECT<br />DETECTED</b></div><h3>VisionInspect</h3><p>Camera-led quality checks that turn a frame into a decision.</p><div class="tags"><span>Vision AI</span><span>Edge ML</span></div></article>
+          <article class="build-card tableflow reveal" data-tilt><p class="eyebrow">03 / OPERATIONS</p><div class="floor-map"><i></i><i></i><i></i><b>TABLEFLOW</b></div><h3>TableFlow</h3><p>Live floor and reservation intelligence for hospitality teams.</p><div class="tags"><span>Flutter</span><span>Dashboard UX</span></div></article>
+        </div>
       </section>
 
       <section id="swiftride" class="case-study shell">
@@ -83,6 +93,6 @@
     </main>
     <footer class="shell"><a class="brand" href="#top">SAIMON<span>_</span></a><p>© 2026 Saimon Kabir Chowdhury</p><a href="mailto:hello@saimon.dev">hello@saimon.dev ↗</a></footer>
     <script src="script.js"></script>
-    <script>document.querySelector('.hero-actions .primary').href = 'swiftride.html';</script>
+    <script>const primaryCta=document.querySelector('.hero-actions .primary');primaryCta.href='#work';primaryCta.innerHTML='Explore my work <span>↓</span>';</script>
   </body>
 </html>
