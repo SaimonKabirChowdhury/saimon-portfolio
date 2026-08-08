@@ -1,74 +1,70 @@
-# Saimon Kabir Chowdhury — Portfolio
+# Saimon Kabir Chowdhury — Portfolio Domain
 
-![Status](https://img.shields.io/badge/status-portfolio%20in%20progress-DDF72F?style=flat-square&labelColor=171716)
-![Focus](https://img.shields.io/badge/focus-product%20systems%20%2B%20AI-171716?style=flat-square)
-![Built with](https://img.shields.io/badge/built%20with-HTML%20%2B%20CSS%20%2B%20JS-F06543?style=flat-square&labelColor=171716)
+![Status](https://img.shields.io/badge/status-active%20portfolio-DFFF31?style=flat-square&labelColor=070906)
+![Focus](https://img.shields.io/badge/focus-product%20systems%20%2B%20AI-10150E?style=flat-square)
+![Built with](https://img.shields.io/badge/built%20with-HTML%20%2B%20CSS%20%2B%20JS-FF6A24?style=flat-square&labelColor=070906)
 
-Personal portfolio for **Saimon Kabir Chowdhury** — a product-minded developer working across mobile apps, operational software, AI and computer vision.
+A cinematic personal portfolio for **Saimon Kabir Chowdhury** — a product-minded builder working across mobile experiences, AI, computer vision and operational software.
 
-## Live concept
+The page uses a custom hero illustration, dimensional CSS interfaces, motion, pointer-driven depth and a lightweight particle field. It needs no framework or build step: open [index.html](index.html) in a browser.
 
-The site is a static, fast portfolio landing page with scroll reveals, animated product mockups and a repeatable case-study structure. Open [index.html](index.html) locally to view it.
+## Featured case study: SwiftRide
+
+SwiftRide is a map-first ride-sharing ecosystem designed for three roles sharing one live marketplace.
+
+| Role | Product moment | Screen represented on the site |
+| --- | --- | --- |
+| Rider | Find the destination | Destination search |
+| Rider | Make the booking decision | Ride selection |
+| Rider | Know where the driver is | Live pickup map |
+| Rider | Stay informed and safe | In-trip controls |
+| Driver | Complete the pickup reliably | Navigation + pickup OTP |
+| Operations | Protect service levels | Live marketplace dispatch |
+
+```mermaid
+flowchart LR
+  A[Rider: search] --> B[Choose ride]
+  B --> C[Live pickup]
+  C --> D[In-trip support]
+  E[Driver: go online] --> F[Accept ride]
+  F --> G[Navigate + pickup OTP]
+  H[Ops: live marketplace] --> I[Resolve exception + assign]
+```
+
+The editable UX/UI source remains in the Penpot project **SwiftRide — Product & UX**. The website’s screens are purpose-built browser presentations of that rider, driver and operations flow; SwiftRide is a self-initiated, implementation-ready concept until a production build is published.
+
+## Project archive
+
+[`projects/`](projects/) contains 20 numbered product folders. Every folder has a short product brief and is deliberately ready to receive its own source code, documentation, assets and deployment configuration.
+
+```text
+projects/
+  01-swiftride/       06-fixfleet/         11-caretrack/        16-leadboard/
+  02-tableflow/       07-invoicepilot/     12-menumint/         17-gympulse/
+  03-sitesight/       08-rentready/        13-shiftsync/        18-tutormatch/
+  04-queueless/       09-classloop/        14-claimsnap/        19-parcelproof/
+  05-stocklens/       10-eventpulse/       15-vendorvault/      20-visioninspect/
+```
 
 ## Portfolio workflow
 
 ```mermaid
 flowchart LR
   A[Real operating problem] --> B[Product framing]
-  B --> C[UX flows & design system]
-  C --> D[Prototype & implementation plan]
-  D --> E[Build and validate]
-  E --> F[Case study & portfolio proof]
+  B --> C[UX flows + visual system]
+  C --> D[Prototype + implementation plan]
+  D --> E[Build + validate]
+  E --> F[Case study + portfolio proof]
 ```
 
-## Featured work
-
-### SwiftRide — map-first ride-sharing system
-
-The flagship case study shows a full rider, driver and operations loop:
-
-```mermaid
-flowchart LR
-  R1[Search destination] --> R2[Choose ride]
-  R2 --> R3[Live pickup]
-  R3 --> R4[On trip]
-  R4 --> R5[Receipt & rating]
-  D1[Go online] --> D2[Accept ride]
-  D2 --> D3[Navigate & verify pickup]
-  D3 --> D4[Complete trip]
-  O1[Live marketplace] --> O2[Resolve exception]
-```
-
-Designed states include:
-
-- Rider map, search, fare choice, booking, live pickup, safety, payment and activity
-- Driver availability, incoming offer, GPS navigation, pickup PIN, earnings and vehicle profile
-- Operations dispatch, supply/demand map, exception handling and assignment
-
-The editable UX/UI work lives in the Penpot project **SwiftRide — Product & UX**.
-
-## Other portfolio tracks
-
-| Project | Area | Purpose |
-| --- | --- | --- |
-| SwiftRide | Real-time mobility | Ride-sharing for riders, drivers and operations |
-| VisionInspect | Computer vision | Visual quality decisions from camera input |
-| TableFlow | Hospitality operations | Reservations and floor management with live state |
-| Future systems | AI + product | Practical automation for SMEs |
-
-## Project structure
+## Repository layout
 
 ```text
 .
-├── index.html        # Portfolio page
-├── styles.css        # Visual system, mockups, responsive layout
-└── script.js         # Scroll-reveal and smooth-navigation behavior
+├── assets/            # Hero art and future portfolio assets
+├── projects/          # 20 code-ready product spaces
+├── index.html         # Portfolio experience and case study
+├── styles.css         # 3D visual system and responsive screens
+├── script.js          # Motion, reveals, depth and particle field
+└── README.md
 ```
-
-## Local use
-
-No dependencies or build process are required. Open `index.html` in a browser.
-
-## Honest portfolio note
-
-SwiftRide is a self-initiated product concept. It is presented as design and implementation-ready product work until a production build is complete.
