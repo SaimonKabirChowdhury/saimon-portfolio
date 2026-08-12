@@ -44,3 +44,6 @@ html,body{height:auto!important;min-height:100%;overflow-y:auto!important;overfl
   .project-lane-head{display:grid!important;gap:9px!important}
   .project-lane-head h3{text-align:left!important}
 }
+
+/* Keep the closing CTA typographically consistent with the site's technical UI language. */
+.home-cta .button.primary{font-family:"DM Mono",monospace!important;font-size:11px!important;font-weight:500!important;line-height:1!important;letter-spacing:.02em!important}.home-cta .button.primary span{font-family:"DM Mono",monospace!important;font-size:14px!important;line-height:1!important}
