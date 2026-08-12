@@ -3,97 +3,267 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Saimon Kabir Chowdhury — product systems, AI and future-facing software." />
-    <title>Saimon Kabir Chowdhury — The future, made tangible.</title>
+    <meta
+      name="description"
+      content="Saimon Kabir Chowdhury — futuristic blue portfolio for mobile systems, AI, computer vision and operational software."
+    />
+    <title>Saimon Kabir Chowdhury — Blue Future Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="theme.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <link rel="stylesheet" href="penpot-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="custom-blue.css" />
   </head>
   <body>
-    <canvas id="magic-field" aria-hidden="true"></canvas>
-    <div class="grain" aria-hidden="true"></div>
-    <header class="nav shell">
+    <div class="page-bg" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="grid"></span>
+    </div>
+
+    <header class="site-header">
       <a class="brand" href="#top">SAIMON<span>_</span></a>
-      <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#intelligence">AI / ML</a><a href="#archive">Archive</a><a href="#about">About</a></nav>
-      <a class="nav-cta" href="mailto:hello@saimon.dev">Enter the domain ↗</a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#archive">Archive</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="mailto:saimonkabirchowdhury@gmail.com">Let’s build ↗</a>
     </header>
 
-    <main id="top">
-      <section class="hero shell">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">SAIMON KABIR CHOWDHURY / 2026</p>
-          <h1>The future is<br /><em>my domain.</em></h1>
-          <p>I build the systems behind tomorrow’s products: mobile experiences, AI, computer vision and operational software that feels a little like magic and works like engineering.</p>
-          <div class="hero-actions"><a class="button primary" href="#swiftride">Enter SwiftRide <span>↓</span></a><a class="text-link" href="#about">Meet the builder <span>→</span></a></div>
-        </div>
-        <div class="hero-portal reveal" data-tilt>
-          <div class="portal-rings"></div>
-          <div class="portal-image"></div>
-          <div class="portal-chip chip-one">MOBILE SYSTEMS</div><div class="portal-chip chip-two">APPLIED AI</div><div class="portal-chip chip-three">COMPUTER VISION</div>
-          <div class="portal-mark">SC</div>
-        </div>
-        <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
-      </section>
-
-      <section class="manifesto shell reveal">
-        <p class="eyebrow">01 / BUILDER’S MANIFESTO</p>
-        <h2>I do not collect ideas.<br />I <em>give them gravity.</em></h2>
-        <p class="manifesto-copy">The work lives where product judgment meets technical craft: the screen a rider trusts, the dashboard an operator depends on, the model that turns a camera into a decision.</p>
-      </section>
-
-      <section id="work" class="portfolio-work shell">
-        <div class="section-intro reveal"><div><p class="eyebrow">02 / SELECTED BUILDS</p><h2>Systems for<br /><em>what’s next.</em></h2></div><p>One portfolio, multiple directions: mobility, AI, visual intelligence and operations software.</p></div>
-        <div class="build-grid">
-          <a class="build-card featured reveal" href="swiftride.html" data-tilt><div><p class="eyebrow">01 / MOBILITY CASE STUDY</p><h3>SwiftRide<span>↗</span></h3><p>A full ride-sharing ecosystem for riders, drivers and live operations.</p><div class="tags"><span>Mobile UX</span><span>Maps</span><span>Realtime</span></div></div><div class="build-phone"><div class="fake-map darkmap"><span class="road r1"></span><span class="road r2"></span><i class="pin p-lime"></i><i class="car-dot"></i></div><div class="mini-sheet"><b>Driver 2 min away</b><small>Track live ride</small></div></div></a>
-          <article class="build-card vision reveal" data-tilt><p class="eyebrow">02 / COMPUTER VISION</p><div class="vision-orb"><i></i><b>OBJECT<br />DETECTED</b></div><h3>VisionInspect</h3><p>Camera-led quality checks that turn a frame into a decision.</p><div class="tags"><span>Vision AI</span><span>Edge ML</span></div></article>
-          <article class="build-card tableflow reveal" data-tilt><p class="eyebrow">03 / OPERATIONS</p><div class="floor-map"><i></i><i></i><i></i><b>TABLEFLOW</b></div><h3>TableFlow</h3><p>Live floor and reservation intelligence for hospitality teams.</p><div class="tags"><span>Flutter</span><span>Dashboard UX</span></div></article>
-        </div>
-      </section>
-
-      <section id="swiftride" class="case-study shell">
-        <div class="section-intro reveal"><div><p class="eyebrow">02 / FEATURED CASE STUDY</p><h2>SwiftRide<span>™</span></h2></div><p>A complete ride-sharing ecosystem, designed around the moments when time, trust and location all matter at once.</p></div>
-        <div class="case-hero reveal" data-tilt>
-          <div class="case-hero-copy"><p class="case-kicker">MAP-FIRST MOBILITY PLATFORM</p><h3>Every ride has three realities.</h3><p>One experience for the rider. One command surface for the driver. One live marketplace for operations.</p><div class="tags"><span>Product design</span><span>Mobile UX</span><span>Real-time systems</span></div></div>
-          <div class="mini-map"><i class="pin rider-pin"></i><i class="pin driver-pin"></i><i class="route-line"></i><div class="map-label">3 min<br /><b>Driver away</b></div></div>
+    <main id="top" class="layout">
+      <section class="hero-card card card-glow">
+        <div class="hero-copy">
+          <p class="eyebrow">SAIMON KABIR CHOWDHURY / PRODUCT BUILDER / 2026</p>
+          <h1>
+            Building
+            <span class="gradient-text">future-ready systems</span>
+            with product sense, code and AI.
+          </h1>
+          <p class="hero-text">
+            I design and build modern digital products across mobile apps, AI-powered workflows,
+            computer vision and operational platforms. My work focuses on turning ambitious ideas into
+            clear, usable and implementation-ready systems.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore projects</a>
+            <a class="button secondary" href="#about">More about me</a>
+          </div>
+          <div class="hero-stats">
+            <article>
+              <strong>20+</strong>
+              <span>portfolio-ready product concepts</span>
+            </article>
+            <article>
+              <strong>Mobile + AI</strong>
+              <span>cross-functional product thinking</span>
+            </article>
+            <article>
+              <strong>Execution</strong>
+              <span>from UX structure to build direction</span>
+            </article>
+          </div>
         </div>
 
-        <div class="case-grid reveal"><article><b>01</b><h3>The problem</h3><p>Ride apps collapse when their next action is unclear. SwiftRide makes status, route and trust visible at every critical moment.</p></article><article><b>03</b><h3>Core roles</h3><p>Rider, driver and dispatch operate from one shared truth, with interfaces tuned to their immediate decision.</p></article><article><b>31</b><h3>Designed states</h3><p>From first destination search to proof of pickup, live support and post-ride records.</p></article></div>
-
-        <div class="screen-heading reveal"><p class="eyebrow">THE UI / UX SYSTEM</p><h3>Not a concept deck. A real operating flow.</h3><p>Six key screens from the Penpot product file — mapped across rider, driver and live dispatch.</p></div>
-        <div class="screen-gallery">
-          <article class="phone-wrap rider-search reveal" data-tilt><p>01 / RIDER</p><div class="phone"><div class="phone-top">9:41 <span>•••</span></div><h4>Where to?</h4><div class="searchbar">⌕ &nbsp; Search destination</div><small>RECENT PLACES</small><div class="place">⌖ &nbsp; Luna Bakery<br /><em>Jalan Mesui, Kuala Lumpur</em></div><div class="place">⌂ &nbsp; Home<br /><em>Mont Kiara, Kuala Lumpur</em></div><div class="bottom-tabs"><b>⌂</b><b>◷</b><b>◎</b></div></div><strong>Destination search</strong></article>
-          <article class="phone-wrap ride-choice reveal" data-tilt><p>02 / RIDER</p><div class="phone map-phone"><div class="fake-map"><i class="pin p-lime"></i><i class="pin p-orange"></i><span class="road r1"></span><span class="road r2"></span></div><div class="ride-sheet"><small>PICKUP · LUNA BAKERY</small><h4>Choose a ride</h4><div class="ride-row active"><b>SwiftGo</b><span>3 min · RM 12</span></div><div class="ride-row"><b>SwiftXL</b><span>5 min · RM 20</span></div><button>Choose SwiftGo</button></div></div><strong>Ride selection</strong></article>
-          <article class="phone-wrap live-pickup reveal" data-tilt><p>03 / RIDER</p><div class="phone map-phone"><div class="fake-map darkmap"><i class="pin p-lime"></i><i class="car-dot"></i><span class="road r1"></span><span class="road r2"></span></div><div class="ride-sheet arrival"><small>DRIVER ARRIVING</small><h4>Amin is 2 min away</h4><p>Silver Bezza · VCR 8462</p><div class="avatar">A</div><button>Track live ride</button></div></div><strong>Live pickup map</strong></article>
-          <article class="phone-wrap trip-controls reveal" data-tilt><p>04 / RIDER</p><div class="phone map-phone"><div class="fake-map traffic"><span class="road r1"></span><span class="road r2"></span><i class="car-dot"></i></div><div class="ride-sheet trip"><small>ON TRIP · 12 MIN LEFT</small><h4>To Mont Kiara</h4><div class="trip-actions"><b>⌁<em>Share trip</em></b><b>✦<em>Safety</em></b><b>?</b></div></div></div><strong>In-trip controls</strong></article>
-          <article class="phone-wrap driver-nav reveal" data-tilt><p>05 / DRIVER</p><div class="phone driver-phone"><div class="turn">↰ <span>Turn left<br /><small>in 180 m</small></span></div><div class="fake-map driver-map"><span class="road r1"></span><span class="road r2"></span><i class="nav-arrow">▲</i></div><div class="driver-sheet"><small>NEXT PICKUP</small><h4>Luna Bakery</h4><p>Verify pickup code</p><div class="otp">4 &nbsp; 8 &nbsp; 2 &nbsp; 1</div><button>I have arrived</button></div></div><strong>Driver navigation + OTP</strong></article>
-          <article class="phone-wrap ops-map reveal" data-tilt><p>06 / OPERATIONS</p><div class="ops-panel"><div class="ops-top"><b>SWIFTRIDE / LIVE</b><span>● 148 rides</span></div><div class="ops-map"><span class="road r1"></span><span class="road r2"></span><i class="o-pin a"></i><i class="o-pin b"></i><i class="o-pin c"></i><i class="o-pin d"></i><div class="ops-route"></div></div><div class="exception"><small>EXCEPTION / 02</small><b>Unassigned rider</b><span>Jalan Mesui · 4 min wait</span><button>Assign driver →</button></div></div><strong>Live marketplace dispatch</strong></article>
-        </div>
-
-        <div class="flow-board reveal"><div><p class="eyebrow">THE FULL PRODUCT FLOW</p><h3>One shared ride. Three focused journeys.</h3></div><ol><li><b>Rider</b><span>Search → choose → verify pickup → track → arrive → support</span></li><li><b>Driver</b><span>Go online → accept → navigate → OTP → complete → earnings</span></li><li><b>Ops</b><span>Monitor supply → resolve exceptions → assign → protect service</span></li></ol></div>
-      </section>
-
-      <section id="intelligence" class="intelligence shell">
-        <div class="section-intro reveal"><div><p class="eyebrow">03 / INTELLIGENT SYSTEMS</p><h2>AI, ML &amp;<br /><em>visual intelligence.</em></h2></div><p>I use AI when it gives a person a clearer, faster or more reliable decision—not as decoration.</p></div>
-        <div class="intelligence-grid">
-          <article class="reveal"><span>01</span><div class="neural-lines" aria-hidden="true"></div><h3>Applied AI</h3><p>Assistive product features, structured automation and decision support that fit real operating workflows.</p></article>
-          <article class="reveal"><span>02</span><div class="vision-frame" aria-hidden="true"><i></i><b>98.4%</b></div><h3>Computer vision</h3><p>Camera-led inspection, detection and quality signals that turn visual input into action.</p></article>
-          <article class="reveal"><span>03</span><div class="data-stream" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>ML systems</h3><p>Useful prediction and classification layers connected to an understandable product experience.</p></article>
+        <div class="hero-profile">
+          <div class="profile-shell">
+            <div class="profile-badge">LIVE PROFILE</div>
+            <img src="assets/saimon-profile-blue.jpg" alt="Portrait of Saimon Kabir Chowdhury" />
+          </div>
+          <div class="profile-panel">
+            <p class="panel-label">FOCUS STACK</p>
+            <div class="stack-tags">
+              <span>Flutter</span>
+              <span>Mobile UX</span>
+              <span>Java</span>
+              <span>Python</span>
+              <span>Node.js</span>
+              <span>AI / ML</span>
+              <span>Computer Vision</span>
+              <span>Product Systems</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="archive" class="archive shell">
-        <div class="section-intro reveal"><div><p class="eyebrow">03 / THE PROJECT ARCHIVE</p><h2>Twenty systems.<br /><em>One direction.</em></h2></div><p>The repository is prepared with one folder per future product — each ready for its own source, experiments and deployment history.</p></div>
-        <div class="archive-grid reveal"><span>01 / SwiftRide</span><span>02 / TableFlow</span><span>03 / SiteSight</span><span>04 / QueueLess</span><span>05 / StockLens</span><span>06 / FixFleet</span><span>07 / InvoicePilot</span><span>08 / RentReady</span><span>09 / ClassLoop</span><span>10 / EventPulse</span><span>11 / CareTrack</span><span>12 / MenuMint</span><span>13 / ShiftSync</span><span>14 / ClaimSnap</span><span>15 / VendorVault</span><span>16 / LeadBoard</span><span>17 / GymPulse</span><span>18 / TutorMatch</span><span>19 / ParcelProof</span><span>20 / VisionInspect</span></div>
+      <section id="about" class="section-card card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">01 / ABOUT ME</p>
+            <h2>More than a developer — I think in systems.</h2>
+          </div>
+          <p>
+            I’m Saimon Kabir Chowdhury, a builder who blends product thinking, software execution and
+            future-facing technology. I’m especially interested in products that need strong UX,
+            operational clarity and technical depth.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="mini-card">
+            <h3>What I build</h3>
+            <p>
+              Mobile apps, dashboards, intelligent workflows, operational platforms and experimental
+              products that are structured to scale as real businesses and real tools.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>How I work</h3>
+            <p>
+              I move from problem framing → flow design → interface systems → implementation planning →
+              launch-ready product direction, keeping usability and business logic connected.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>What drives me</h3>
+            <p>
+              I want to build technology that feels futuristic but stays useful — software that looks
+              sharp, works clearly and solves an actual problem.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h3>Core strengths</h3>
+            <ul>
+              <li>Mobile product thinking</li>
+              <li>UI/UX structure and case-study presentation</li>
+              <li>AI / ML feature integration</li>
+              <li>Operational software concepts</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section id="about" class="about shell reveal"><div class="about-orb">SC</div><div><p class="eyebrow">04 / ABOUT SAIMON</p><h2>A builder with one hand in the <em>future</em> and one on the work.</h2><p>I use product thinking, mobile craft, AI and visual intelligence to turn ambitious ideas into legible, working systems.</p><a class="button primary" href="mailto:hello@saimon.dev">Build the next system <span>↗</span></a></div></section>
+      <section id="projects" class="section-card card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 / FEATURED WORK</p>
+            <h2>Card-based sections for a portfolio that can keep growing.</h2>
+          </div>
+          <p>
+            Each area is designed like a modular futuristic card so more case studies, apps and
+            experiments can be added later without breaking the visual system.
+          </p>
+        </div>
+        <div class="project-grid">
+          <a class="project-card feature" href="swiftride.html">
+            <span class="chip">MOBILITY CASE STUDY</span>
+            <h3>SwiftRide</h3>
+            <p>
+              A complete ride-sharing ecosystem for riders, drivers and live operations — organized as a
+              product case study with system thinking, flow logic and UI structure.
+            </p>
+            <div class="card-tags"><span>Maps</span><span>Real-time UX</span><span>Operations</span></div>
+          </a>
+          <article class="project-card">
+            <span class="chip">COMPUTER VISION</span>
+            <h3>VisionInspect</h3>
+            <p>Camera-led inspection and quality detection concepts that turn visual input into action.</p>
+            <div class="card-tags"><span>Vision AI</span><span>Edge ML</span></div>
+          </article>
+          <article class="project-card">
+            <span class="chip">OPERATIONS</span>
+            <h3>TableFlow</h3>
+            <p>Hospitality operations software with live floor, reservation and service intelligence.</p>
+            <div class="card-tags"><span>Flutter</span><span>Dashboard UX</span></div>
+          </article>
+          <article class="project-card">
+            <span class="chip">INTELLIGENT PRODUCT</span>
+            <h3>PriorAI</h3>
+            <p>AI-assisted referral and triage thinking focused on structured decision support.</p>
+            <div class="card-tags"><span>AI workflows</span><span>Healthcare logic</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="expertise" class="section-card card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 / EXPERTISE</p>
+            <h2>Where I create the most value.</h2>
+          </div>
+          <p>
+            I use technology where it improves clarity, speed, trust and product outcomes — not just for
+            decoration.
+          </p>
+        </div>
+        <div class="expertise-grid">
+          <article class="mini-card glow-border">
+            <h3>Mobile Systems</h3>
+            <p>Designing app flows and interfaces that feel polished, practical and buildable.</p>
+          </article>
+          <article class="mini-card glow-border">
+            <h3>Applied AI</h3>
+            <p>Using AI for assistant flows, classification, insight generation and product leverage.</p>
+          </article>
+          <article class="mini-card glow-border">
+            <h3>Computer Vision</h3>
+            <p>Exploring visual intelligence for detection, inspection, analysis and automation.</p>
+          </article>
+          <article class="mini-card glow-border">
+            <h3>Operational Software</h3>
+            <p>Creating control surfaces, dashboards and multi-role systems that support real operations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="archive" class="section-card card">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 / PROJECT ARCHIVE</p>
+            <h2>A growing system, not a fixed portfolio.</h2>
+          </div>
+          <p>
+            This archive is structured so more products can be added over time — ideal for future apps,
+            experiments, case studies and builds.
+          </p>
+        </div>
+        <div class="archive-grid">
+          <span>01 / SwiftRide</span>
+          <span>02 / TableFlow</span>
+          <span>03 / SiteSight</span>
+          <span>04 / QueueLess</span>
+          <span>05 / StockLens</span>
+          <span>06 / FixFleet</span>
+          <span>07 / InvoicePilot</span>
+          <span>08 / RentReady</span>
+          <span>09 / ClassLoop</span>
+          <span>10 / EventPulse</span>
+          <span>11 / CareTrack</span>
+          <span>12 / MenuMint</span>
+          <span>13 / ShiftSync</span>
+          <span>14 / ClaimSnap</span>
+          <span>15 / VendorVault</span>
+          <span>16 / LeadBoard</span>
+          <span>17 / GymPulse</span>
+          <span>18 / TutorMatch</span>
+          <span>19 / ParcelProof</span>
+          <span>20 / VisionInspect</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section-card card contact-card">
+        <div>
+          <p class="eyebrow">05 / CONTACT</p>
+          <h2>Let’s build something sharp, useful and future-ready.</h2>
+          <p>
+            If you want a product-minded developer who can think across UX, engineering direction and AI,
+            I’m open to collaborations, freelance projects and portfolio-worthy builds.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:saimonkabirchowdhury@gmail.com">Email me</a>
+          <a class="button secondary" href="https://github.com/SaimonKabirChowdhury">GitHub profile</a>
+        </div>
+      </section>
     </main>
-    <footer class="shell"><a class="brand" href="#top">SAIMON<span>_</span></a><p>© 2026 Saimon Kabir Chowdhury</p><a href="mailto:hello@saimon.dev">hello@saimon.dev ↗</a></footer>
-    <script src="script.js"></script>
-    <script>const primaryCta=document.querySelector('.hero-actions .primary');primaryCta.href='#work';primaryCta.innerHTML='Explore my work <span>↓</span>';</script>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top">SAIMON<span>_</span></a>
+      <p>© 2026 Saimon Kabir Chowdhury · Blue Future Portfolio</p>
+      <a href="mailto:saimonkabirchowdhury@gmail.com">saimonkabirchowdhury@gmail.com</a>
+    </footer>
   </body>
 </html>
