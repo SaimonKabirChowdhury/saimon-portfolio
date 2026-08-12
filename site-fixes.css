@@ -49,3 +49,37 @@ html,body{height:auto!important;min-height:100%;overflow-y:auto!important;overfl
 .home-cta .button.primary{font-family:"DM Mono",ui-monospace,SFMono-Regular,Menlo,monospace!important;font-size:11px!important;font-weight:500!important;line-height:1!important;letter-spacing:.015em!important}
 .home-cta .button.primary span{font-size:0!important;width:15px;height:15px;display:inline-grid!important;place-items:center;line-height:1!important}
 .home-cta .button.primary span::before{content:"→";display:block;font-family:Arial,Helvetica,sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:1!important;transform:rotate(-45deg);transform-origin:center;color:#061123}
+
+/* Project cards: swipeable horizontal lists instead of a fixed grid. */
+.project-lane{overflow:visible!important}
+.repo-card-grid{display:grid!important;grid-template-columns:none!important;grid-auto-flow:column!important;grid-auto-columns:clamp(300px,31vw,372px)!important;gap:16px!important;width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;padding:4px 3px 16px!important;margin-top:18px!important;scroll-snap-type:x mandatory;scroll-padding-inline:3px;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;touch-action:pan-x pan-y!important;scrollbar-width:thin;scrollbar-color:#75d8ff55 transparent}
+.repo-card-grid::-webkit-scrollbar{height:5px}.repo-card-grid::-webkit-scrollbar-track{background:transparent}.repo-card-grid::-webkit-scrollbar-thumb{background:#75d8ff55;border-radius:99px}.repo-card{scroll-snap-align:start;scroll-snap-stop:normal;min-height:340px!important}
+.project-lane-head:after{content:"SWIPE / SCROLL  →";display:block;margin-left:auto;color:#75d8ffaa;font:500 8px "DM Mono",monospace;letter-spacing:.1em;white-space:nowrap}
+
+/* Restore the cleaner About layout used before the collage redesign: one strong portrait + editorial copy. */
+.story-section{display:grid!important;grid-template-columns:minmax(300px,.72fr) minmax(0,1.28fr)!important;gap:88px!important;align-items:center!important;padding:120px 0!important}
+.story-visual{position:relative!important;top:auto!important;display:block!important;height:610px!important;max-width:none!important;width:100%!important;perspective:none!important}
+.story-shot-code,.story-shot-think,.story-crosshair{display:none!important}
+.story-shot-main{display:block!important;width:100%!important;height:100%!important;margin:0!important;grid-row:auto!important;border-radius:0!important;overflow:hidden!important;clip-path:polygon(0 0,92% 0,100% 8%,100% 100%,8% 100%,0 92%);border:1px solid #75d8ff45!important;box-shadow:0 28px 80px #0008!important}
+.story-shot-main:after{background:linear-gradient(180deg,transparent 62%,#04101fd1 100%)!important}
+.story-shot-main img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% 42%!important;filter:saturate(.9) contrast(1.05)!important}
+.story-shot-main figcaption{display:none!important}
+.story-copy{padding:0!important;max-width:760px!important}
+.story-copy h2{font-size:clamp(48px,5.7vw,82px)!important;line-height:.92!important;letter-spacing:-.082em!important;margin:0 0 28px!important}
+.story-copy .story-lead{font-size:17px!important;line-height:1.72!important}
+.story-principles{display:none!important}
+.story-stack{margin:30px 0 0!important}
+
+@media(max-width:900px){
+  .story-section{grid-template-columns:1fr!important;gap:42px!important;padding:86px 0!important}
+  .story-visual{height:520px!important;max-width:680px!important}
+  .story-copy{max-width:760px!important}
+  .repo-card-grid{grid-auto-columns:minmax(280px,82vw)!important}
+  .project-lane-head:after{margin-left:0;margin-top:8px}
+}
+
+@media(max-width:560px){
+  .story-visual{height:430px!important}
+  .story-copy h2{font-size:46px!important}
+  .repo-card-grid{grid-auto-columns:minmax(270px,88vw)!important}
+}
