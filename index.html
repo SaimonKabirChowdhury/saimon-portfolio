@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="portfolio.css" />
     <link rel="stylesheet" href="penpot-theme.css" />
     <link rel="stylesheet" href="site-fixes.css?v=3" />
-    <link rel="stylesheet" href="about-home.css?v=1" />
+    <link rel="stylesheet" href="about-home.css?v=2" />
   </head>
   <body>
     <canvas id="magic-field" aria-hidden="true"></canvas>
@@ -91,31 +91,140 @@
         <div class="section-intro reveal">
           <div>
             <p class="eyebrow">02 / PROJECTS</p>
-            <h2>Built across<br /><em>four lanes.</em></h2>
+            <h2>Real repos.<br /><em>Real builds.</em></h2>
           </div>
-          <p>Projects are grouped by the kind of problem they solve, so the portfolio can keep expanding without becoming a random wall of cards.</p>
+          <p>Every project below points to its public GitHub repository. When a browser-accessible build is available, the card also includes a direct way to try it.</p>
         </div>
 
-        <div class="project-groups reveal">
-          <section class="project-group project-group-featured">
-            <div class="project-group-head"><span>01 / MOVEMENT</span><h3>Mobility &amp; logistics</h3><p>Location-aware products built around movement, dispatch, queues, fleets and delivery proof.</p></div>
-            <div class="project-list"><a href="swiftride.html">SwiftRide</a><span>QueueLess</span><span>FixFleet</span><span>ParcelProof</span><span>EventPulse</span></div>
+        <div class="project-lanes">
+          <section class="project-lane reveal">
+            <div class="project-lane-head">
+              <span>01 / MOBILE + REALTIME</span>
+              <h3>Apps &amp; connected experiences</h3>
+            </div>
+            <div class="repo-card-grid">
+              <article class="repo-card">
+                <div class="repo-card-top"><span>COMMUNICATION</span><b>01</b></div>
+                <h4>HeyYou</h4>
+                <p>A mobile communication product focused on connecting people through a clean, app-first experience.</p>
+                <div class="repo-tags"><span>Mobile</span><span>Realtime</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/HeyYou" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <span class="repo-action-disabled">Demo soon</span>
+                </div>
+              </article>
+
+              <article class="repo-card">
+                <div class="repo-card-top"><span>VIDEO</span><b>02</b></div>
+                <h4>VideoCall</h4>
+                <p>A mobile video-calling build exploring realtime communication flows and call-focused interaction.</p>
+                <div class="repo-tags"><span>Mobile</span><span>Video</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/VideoCall" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <span class="repo-action-disabled">Demo soon</span>
+                </div>
+              </article>
+
+              <article class="repo-card">
+                <div class="repo-card-top"><span>PRODUCTIVITY</span><b>03</b></div>
+                <h4>PersonalTracker</h4>
+                <p>A Flutter dashboard with modular personal tracking, navigation, stats and mood-selection state.</p>
+                <div class="repo-tags"><span>Flutter</span><span>Provider</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/PersonalTracker" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <span class="repo-action-disabled">Demo soon</span>
+                </div>
+              </article>
+            </div>
           </section>
 
-          <section class="project-group">
-            <div class="project-group-head"><span>02 / OPERATIONS</span><h3>Business systems</h3><p>Tools for inventory, teams, vendors, hospitality, billing and operational control.</p></div>
-            <div class="project-list"><span>TableFlow</span><span>StockLens</span><span>InvoicePilot</span><span>RentReady</span><span>MenuMint</span><span>ShiftSync</span><span>VendorVault</span><span>LeadBoard</span></div>
+          <section class="project-lane reveal">
+            <div class="project-lane-head">
+              <span>02 / AI + COGNITIVE</span>
+              <h3>Models turned into products</h3>
+            </div>
+            <div class="repo-card-grid">
+              <article class="repo-card repo-card-featured">
+                <div class="repo-card-top"><span>COMPUTER VISION</span><b>04</b></div>
+                <h4>NeuroVision AI</h4>
+                <p>A deployable brain-MRI research application using a Keras classifier, confidence scoring and Grad-CAM explainability.</p>
+                <div class="repo-tags"><span>Python</span><span>Keras</span><span>Grad-CAM</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/Brain-MRI" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <a class="repo-action-live" href="https://brain-mri-6gtmdqdrmrgwaatrljnrlt.streamlit.app/" target="_blank" rel="noreferrer">Try live <span>↗</span></a>
+                </div>
+              </article>
+
+              <article class="repo-card">
+                <div class="repo-card-top"><span>CNN EXPERIMENT</span><b>05</b></div>
+                <h4>Rock Paper Scissors CNN</h4>
+                <p>A compact computer-vision classifier experiment packaged around a simple Gradio-style interaction.</p>
+                <div class="repo-tags"><span>Python</span><span>CNN</span><span>Gradio</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/RockPaperScissorCnn" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <span class="repo-action-disabled">Demo soon</span>
+                </div>
+              </article>
+
+              <article class="repo-card">
+                <div class="repo-card-top"><span>COGNITIVE SYSTEM</span><b>06</b></div>
+                <h4>PriorAI</h4>
+                <p>A Next.js cognitive-triage prototype with symptom intake, explainable prioritisation and referral workflow logic.</p>
+                <div class="repo-tags"><span>Next.js</span><span>TypeScript</span><span>AI Logic</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/PriorAI-NextJS" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <span class="repo-action-disabled">Demo soon</span>
+                </div>
+              </article>
+            </div>
           </section>
 
-          <section class="project-group">
-            <div class="project-group-head"><span>03 / INTELLIGENCE</span><h3>AI &amp; visual systems</h3><p>Products where models, cameras or automated decisions are part of the product itself.</p></div>
-            <div class="project-list"><span>SiteSight</span><span>CareTrack</span><span>ClaimSnap</span><span>VisionInspect</span></div>
-          </section>
+          <section class="project-lane reveal">
+            <div class="project-lane-head">
+              <span>03 / WEB + PRODUCT</span>
+              <h3>Interfaces, commerce &amp; product surfaces</h3>
+            </div>
+            <div class="repo-card-grid">
+              <article class="repo-card repo-card-featured">
+                <div class="repo-card-top"><span>MARKETPLACE</span><b>07</b></div>
+                <h4>GearHub</h4>
+                <p>A responsive animated landing page for a gear-rental marketplace, built as a lightweight browser experience.</p>
+                <div class="repo-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/GearHub" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <a class="repo-action-live" href="https://raw.githack.com/SaimonKabirChowdhury/GearHub/main/index.html" target="_blank" rel="noreferrer">Try live <span>↗</span></a>
+                </div>
+              </article>
 
-          <section class="project-group">
-            <div class="project-group-head"><span>04 / PLATFORMS</span><h3>Community &amp; matching</h3><p>Platforms that organize people, classes, coaching, events and service relationships.</p></div>
-            <div class="project-list"><span>ClassLoop</span><span>GymPulse</span><span>TutorMatch</span></div>
+              <article class="repo-card">
+                <div class="repo-card-top"><span>COMMERCE</span><b>08</b></div>
+                <h4>Ecom</h4>
+                <p>An e-commerce codebase exploring product browsing, application structure and commerce-oriented interfaces.</p>
+                <div class="repo-tags"><span>Product</span><span>Commerce</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/Ecom" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <span class="repo-action-disabled">Demo soon</span>
+                </div>
+              </article>
+
+              <article class="repo-card">
+                <div class="repo-card-top"><span>FOOD PLATFORM</span><b>09</b></div>
+                <h4>Eat 2 Save</h4>
+                <p>A product experiment around a food-focused digital platform and its customer-facing experience.</p>
+                <div class="repo-tags"><span>Web</span><span>Product</span></div>
+                <div class="repo-actions">
+                  <a href="https://github.com/SaimonKabirChowdhury/eat-2-save" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+                  <span class="repo-action-disabled">Demo soon</span>
+                </div>
+              </article>
+            </div>
           </section>
+        </div>
+
+        <div class="github-note reveal">
+          <span>GITHUB / PUBLIC WORK</span>
+          <p>More repositories, experiments and older builds live on my GitHub profile.</p>
+          <a href="https://github.com/SaimonKabirChowdhury" target="_blank" rel="noreferrer">View all repositories ↗</a>
         </div>
       </section>
 
