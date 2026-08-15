@@ -1,6 +1,6 @@
 /* Responsive rules for the learning, recognition and technology showcase. */
 .repo-actions .repo-action-live span{color:#061123}
-.recognition-panel{min-height:535px}
+.recognition-panel{min-height:580px}
 .recognition-list{position:relative;z-index:1;display:grid;gap:0;margin:20px 0 0;padding:0;list-style:none;border-top:1px solid #75d8ff28}
 .recognition-list li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:9px;align-items:center;padding:10px 0;border-bottom:1px solid #75d8ff1c}
 .recognition-list span{color:#9de8ff;font:500 8px "DM Mono",monospace}
@@ -22,7 +22,7 @@
   .highlights-heading>p{max-width:580px}
   .highlights-grid{grid-template-columns:1fr}
   .learning-panel,.recognition-panel{min-height:0}
-  .recognition-panel{min-height:500px}
+  .recognition-panel{min-height:545px}
 }
 
 @media(max-width:620px){
@@ -36,7 +36,7 @@
   .course-item{grid-template-columns:38px 1fr;gap:10px;padding:17px 0}
   .course-item h3{font-size:19px}
   .course-item p,.recognition-panel>p{font-size:11px}
-  .recognition-panel{min-height:455px}
+  .recognition-panel{min-height:510px}
   .recognition-panel .panel-label{top:22px;left:22px;right:22px}
   .recognition-orbit{right:-47px;top:-46px;width:170px;height:170px}
   .recognition-orbit:before{width:118px;height:118px}
