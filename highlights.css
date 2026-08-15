@@ -8,6 +8,9 @@
 .recognition-list a{transition:color .2s ease}.recognition-list a:hover{color:#9de8ff}
 .recognition-list i{color:#9de8ff;font-style:normal}
 .recognition-list em{color:#8fa9c5;font:500 8px "DM Mono",monospace;font-style:normal;text-align:right;white-space:nowrap}
+.profile-links{position:relative;z-index:1;display:flex;gap:8px;margin-top:15px}
+.profile-links a{display:inline-flex;align-items:center;gap:10px;padding:8px 10px;border:1px solid #75d8ff4a;border-radius:9px;color:#eaf7ff;background:#75d8ff0b;font:600 9px "DM Mono",monospace;text-decoration:none;transition:background .2s ease,border-color .2s ease,color .2s ease}
+.profile-links a:hover{border-color:#9de8ff;background:#75d8ff1a;color:#9de8ff}.profile-links span{color:#9de8ff;font-size:12px}
 
 /* Cards must allow a horizontal gesture to reach their scroll rail on touch devices. */
 @media (hover:none),(pointer:coarse){
@@ -22,7 +25,7 @@
   .highlights-heading>p{max-width:580px}
   .highlights-grid{grid-template-columns:1fr}
   .learning-panel,.recognition-panel{min-height:0}
-  .recognition-panel{min-height:545px}
+  .recognition-panel{min-height:585px}
 }
 
 @media(max-width:620px){
@@ -36,7 +39,7 @@
   .course-item{grid-template-columns:38px 1fr;gap:10px;padding:17px 0}
   .course-item h3{font-size:19px}
   .course-item p,.recognition-panel>p{font-size:11px}
-  .recognition-panel{min-height:510px}
+  .recognition-panel{min-height:555px}
   .recognition-panel .panel-label{top:22px;left:22px;right:22px}
   .recognition-orbit{right:-47px;top:-46px;width:170px;height:170px}
   .recognition-orbit:before{width:118px;height:118px}
@@ -44,6 +47,8 @@
   .recognition-list{margin-top:15px}
   .recognition-list li{grid-template-columns:21px minmax(0,1fr);gap:7px;padding:8px 0}
   .recognition-list em{grid-column:2;text-align:left;font-size:7px}
+  .profile-links{margin-top:12px}
+  .profile-links a{padding:8px 9px;font-size:8px}
   .technology-rail{margin-top:10px;border-radius:18px;padding-top:20px}
   .technology-rail-head{display:block;padding:0 22px 17px}
   .technology-rail-head p{margin-top:8px;font-size:11px;line-height:1.55}
