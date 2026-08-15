@@ -34,6 +34,11 @@
   .technology{min-width:126px;height:46px;padding:0 11px;font-size:9px}
   .technology img{width:22px;height:22px}
   .technology-track{animation-duration:24s}
+  .projects-home .repo-card-grid{display:flex;gap:12px;overflow-x:auto;padding:0 1px 12px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#75d8ff75 transparent;-webkit-overflow-scrolling:touch}
+  .projects-home .repo-card{flex:0 0 min(82vw,330px);min-height:330px;scroll-snap-align:start}
+  .technology-window{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#75d8ff75 transparent;-webkit-overflow-scrolling:touch}
+  .technology-track{animation-play-state:paused}
+  .technology-set{scroll-snap-align:start}
 }
 
 @media(prefers-reduced-motion:reduce){
