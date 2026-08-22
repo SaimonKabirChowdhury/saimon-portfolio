@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="SiteSight — visual site intelligence dashboard for operational teams." />
+  <title>SiteSight — Visual Site Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row">
+        <div class="brand-mark">S</div>
+        <div>
+          <div class="brand-name">SiteSight</div>
+          <div class="brand-sub">VISUAL INTELLIGENCE</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-item active" data-view="dashboard"><span class="nav-icon">◫</span><span>Overview</span></button>
+        <button class="nav-item" data-view="inspections"><span class="nav-icon">⌕</span><span>Inspections</span><span class="nav-badge">7</span></button>
+        <button class="nav-item" data-view="sites"><span class="nav-icon">⌂</span><span>Sites</span></button>
+        <button class="nav-item" data-view="issues"><span class="nav-icon">△</span><span>Issues</span><span class="nav-badge danger">4</span></button>
+        <button class="nav-item" data-view="analytics"><span class="nav-icon">⌁</span><span>Analytics</span></button>
+      </nav>
+
+      <div class="sidebar-section">
+        <div class="sidebar-label">WORKSPACE</div>
+        <button class="workspace-row">
+          <span class="workspace-dot"></span>
+          <span>
+            <strong>Northstar Ops</strong>
+            <small>Malaysia region</small>
+          </span>
+          <span class="chevron">⌄</span>
+        </button>
+      </div>
+
+      <div class="sidebar-foot">
+        <div class="health-card">
+          <div class="health-top"><span>AI pipeline</span><span class="live-dot"></span></div>
+          <strong>Operational</strong>
+          <small>Last model sync 4m ago</small>
+        </div>
+        <button class="profile-row">
+          <span class="avatar">SK</span>
+          <span><strong>Saimon Kabir</strong><small>Operations admin</small></span>
+          <span class="chevron">⋯</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="globalSearch" type="search" placeholder="Search sites, findings, inspections…" aria-label="Search" />
+          <kbd>⌘ K</kbd>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" aria-label="Notifications">◌<span class="notify-dot"></span></button>
+          <button class="secondary-btn" id="uploadBtn">＋ Upload imagery</button>
+          <button class="primary-btn" id="newInspectionBtn">Start inspection</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="page-head">
+          <div>
+            <div class="eyebrow">OPERATIONS OVERVIEW · 22 AUG 2026</div>
+            <h1>See the site.<br><span>Know what needs attention.</span></h1>
+            <p>SiteSight turns field imagery into prioritized operational findings, so teams can move from inspection to action faster.</p>
+          </div>
+          <div class="page-actions">
+            <button class="ghost-btn" id="exportBtn">Export report</button>
+            <button class="primary-btn scan-launch" id="scanBtn"><span class="spark">✦</span> Run visual scan</button>
+          </div>
+        </div>
+
+        <section class="metrics-grid" aria-label="Site metrics">
+          <article class="metric-card critical-card">
+            <div class="metric-top"><span>CRITICAL ISSUES</span><span class="metric-icon">!</span></div>
+            <div class="metric-value">4</div>
+            <div class="metric-meta"><span class="trend bad">+2 today</span><span>Immediate review</span></div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span>OPEN FINDINGS</span><span class="metric-icon">⌁</span></div>
+            <div class="metric-value" id="openFindingMetric">18</div>
+            <div class="metric-meta"><span class="trend good">−12%</span><span>vs last week</span></div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span>INSPECTIONS TODAY</span><span class="metric-icon">✓</span></div>
+            <div class="metric-value">7</div>
+            <div class="metric-meta"><span class="trend good">5 complete</span><span>2 processing</span></div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span>SITE COVERAGE</span><span class="metric-icon">◎</span></div>
+            <div class="metric-value">92<span>%</span></div>
+            <div class="metric-meta"><span class="trend good">+6.4%</span><span>this cycle</span></div>
+          </article>
+        </section>
+
+        <section class="workspace-grid">
+          <article class="panel site-vision-panel">
+            <div class="panel-head">
+              <div>
+                <div class="panel-kicker">LIVE SITE VIEW</div>
+                <h2 id="siteTitle">KL Sentral Expansion · Zone B</h2>
+              </div>
+              <div class="site-switcher" id="siteSwitcher">
+                <button class="site-chip active" data-site="zone-b">Zone B</button>
+                <button class="site-chip" data-site="roof">Roof deck</button>
+                <button class="site-chip" data-site="loading">Loading bay</button>
+              </div>
+            </div>
+
+            <div class="vision-frame" id="visionFrame">
+              <img id="siteImage" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85" alt="Construction site inspection view" />
+              <div class="image-shade"></div>
+              <div class="scan-line" id="scanLine"></div>
+
+              <button class="detection-box critical-box" data-finding="f1" style="left:16%;top:44%;width:22%;height:25%">
+                <span>01 · CRITICAL</span>
+              </button>
+              <button class="detection-box warning-box" data-finding="f2" style="left:63%;top:28%;width:18%;height:31%">
+                <span>02 · HIGH</span>
+              </button>
+              <button class="detection-box info-box" data-finding="f3" style="left:45%;top:61%;width:18%;height:18%">
+                <span>03 · MEDIUM</span>
+              </button>
+
+              <div class="vision-status">
+                <span class="live-dot"></span>
+                <span>AI overlay active</span>
+                <span>·</span>
+                <span id="confidenceText">92.8% mean confidence</span>
+              </div>
+              <div class="vision-toolbar">
+                <button class="tool active" data-overlay="findings">Findings</button>
+                <button class="tool" data-overlay="zones">Zones</button>
+                <button class="tool" data-overlay="raw">Raw</button>
+              </div>
+            </div>
+
+            <div class="vision-foot">
+              <div><span class="meta-label">CAPTURE</span><strong id="captureLabel">Drone · 16:42</strong></div>
+              <div><span class="meta-label">MODEL</span><strong>SiteSight CV v0.3</strong></div>
+              <div><span class="meta-label">DETECTIONS</span><strong id="detectionCount">8 objects · 3 findings</strong></div>
+              <button class="text-btn" id="openInspectionBtn">Open inspection →</button>
+            </div>
+          </article>
+
+          <aside class="panel findings-panel">
+            <div class="panel-head compact">
+              <div><div class="panel-kicker">PRIORITY QUEUE</div><h2>Open findings</h2></div>
+              <button class="text-btn" data-filter="all">View all</button>
+            </div>
+
+            <div class="filter-row" id="filterRow">
+              <button class="filter-pill active" data-filter="all">All <span>6</span></button>
+              <button class="filter-pill" data-filter="critical">Critical <span>2</span></button>
+              <button class="filter-pill" data-filter="high">High <span>2</span></button>
+              <button class="filter-pill" data-filter="medium">Medium <span>2</span></button>
+            </div>
+
+            <div class="findings-list" id="findingsList"></div>
+          </aside>
+        </section>
+
+        <section class="lower-grid">
+          <article class="panel trend-panel">
+            <div class="panel-head compact">
+              <div><div class="panel-kicker">RISK TREND</div><h2>Findings by severity</h2></div>
+              <select id="trendRange" aria-label="Trend range"><option>Last 7 days</option><option>Last 30 days</option></select>
+            </div>
+            <div class="chart" aria-label="Findings trend chart">
+              <div class="chart-grid"></div>
+              <svg viewBox="0 0 700 210" role="img" aria-label="Line chart showing declining open findings">
+                <polyline class="line critical-line" points="0,154 100,130 200,142 300,94 400,110 500,72 600,80 700,42" />
+                <polyline class="line high-line" points="0,176 100,162 200,130 300,145 400,108 500,126 600,98 700,112" />
+                <polyline class="line medium-line" points="0,195 100,184 200,173 300,158 400,164 500,148 600,152 700,138" />
+              </svg>
+              <div class="chart-axis"><span>16 Aug</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22 Aug</span></div>
+            </div>
+            <div class="legend"><span><i class="critical-dot"></i>Critical</span><span><i class="high-dot"></i>High</span><span><i class="medium-dot"></i>Medium</span></div>
+          </article>
+
+          <article class="panel sites-panel">
+            <div class="panel-head compact">
+              <div><div class="panel-kicker">ACTIVE SITES</div><h2>Inspection coverage</h2></div>
+              <button class="text-btn">Manage sites →</button>
+            </div>
+            <div class="site-table">
+              <button class="site-row" data-site="zone-b"><span class="site-avatar">KS</span><span class="site-main"><strong>KL Sentral Expansion</strong><small>Brickfields · Kuala Lumpur</small></span><span class="coverage"><b>92%</b><i><em style="width:92%"></em></i></span><span class="site-risk critical-text">4 critical</span></button>
+              <button class="site-row" data-site="roof"><span class="site-avatar">SB</span><span class="site-main"><strong>Subang Logistics Hub</strong><small>Subang Jaya · Selangor</small></span><span class="coverage"><b>86%</b><i><em style="width:86%"></em></i></span><span class="site-risk warning-text">2 high</span></button>
+              <button class="site-row" data-site="loading"><span class="site-avatar">PJ</span><span class="site-main"><strong>PJ Commercial Retrofit</strong><small>Petaling Jaya · Selangor</small></span><span class="coverage"><b>78%</b><i><em style="width:78%"></em></i></span><span class="site-risk safe-text">No critical</span></button>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <aside class="drawer" id="findingDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <section class="drawer-card" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <div class="drawer-head"><div><div class="panel-kicker">FINDING DETAIL</div><h2 id="drawerTitle">Finding</h2></div><button class="close-btn" id="closeDrawer" aria-label="Close">×</button></div>
+      <div class="drawer-preview"><img id="drawerImage" alt="Finding evidence" /><div class="drawer-box"></div></div>
+      <div class="drawer-body">
+        <div class="detail-chips"><span id="drawerSeverity"></span><span id="drawerConfidence"></span></div>
+        <p id="drawerDescription"></p>
+        <div class="detail-grid"><div><small>SITE</small><strong id="drawerSite"></strong></div><div><small>ZONE</small><strong id="drawerZone"></strong></div><div><small>DETECTED</small><strong id="drawerDetected"></strong></div><div><small>ASSIGNEE</small><strong id="drawerAssignee"></strong></div></div>
+        <div class="recommendation"><span>✦</span><div><small>AI RECOMMENDATION</small><p id="drawerRecommendation"></p></div></div>
+      </div>
+      <div class="drawer-actions"><button class="secondary-btn" id="assignBtn">Assign</button><button class="primary-btn" id="resolveBtn">Mark resolved</button></div>
+    </section>
+  </aside>
+
+  <div class="modal" id="inspectionModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true">
+      <div class="drawer-head"><div><div class="panel-kicker">NEW INSPECTION</div><h2>Start a visual inspection</h2></div><button class="close-btn" data-close-modal>×</button></div>
+      <div class="modal-body">
+        <label>Site<select id="inspectionSite"><option>KL Sentral Expansion</option><option>Subang Logistics Hub</option><option>PJ Commercial Retrofit</option></select></label>
+        <label>Capture source<select><option>Drone imagery</option><option>Mobile walkthrough</option><option>CCTV frame set</option></select></label>
+        <label class="drop-zone" id="dropZone"><span class="upload-symbol">↑</span><strong>Drop inspection images here</strong><small>JPG, PNG or MP4 · Demo mode accepts simulated input</small><input type="file" id="fileInput" accept="image/*,video/*" multiple /></label>
+      </div>
+      <div class="drawer-actions"><button class="secondary-btn" data-close-modal>Cancel</button><button class="primary-btn" id="createInspectionBtn">Create inspection</button></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastIcon">✓</span><span id="toastText">Done</span></div>
+  <script src="app.js"></script>
+</body>
+</html>
